@@ -1,7 +1,27 @@
 aid: friends-with-benefits
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/friends-with-benefits.png
 name: Friends with Benefits
-description: Friends with Benefits is a company surfaced as a portfolio company of a16z and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Friends with Benefits (FWB) is a token-gated social DAO and cultural community
+  at the intersection of web3, art, music, and technology. Membership is gated by
+  holding the $FWB ERC-20 token, which unlocks access to the community's Discord,
+  local city chapters, IRL events, and editorial and creative programming. Backed
+  by a16z crypto, FWB is one of the most cited examples of a social DAO. It is a
+  community organization rather than an API provider: as of this profile it exposes
+  no public developer API, OpenAPI definition, or developer portal, and its primary
+  web presence (fwb.help) is a membership site. This entry was surfaced as an a16z
+  portfolio company and added to the API Evangelist network as an enrichment lead.
 url: https://raw.githubusercontent.com/api-evangelist/friends-with-benefits/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- DAO
+- Web3
+- Social
+- Community
+- Token-Gated
+- Cryptocurrency
+- Membership
 apis: []
+common:
+- type: DomainSecurity
+  url: security/friends-with-benefits-domain-security.yml
+- type: Website
+  url: https://www.fwb.help
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
